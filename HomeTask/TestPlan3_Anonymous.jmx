@@ -609,12 +609,12 @@
           <com.blazemeter.jmeter.control.WeightedSwitchController guiclass="com.blazemeter.jmeter.control.WeightedSwitchControllerGui" testclass="com.blazemeter.jmeter.control.WeightedSwitchController" testname="RandomAction_Post" enabled="true">
             <boolProp name="IsRandomChoice">false</boolProp>
             <collectionProp name="Weights">
-              <collectionProp name="625667992">
+              <collectionProp name="-1894564538">
                 <stringProp name="-768066970">OpenFirst</stringProp>
                 <stringProp name="1691">50</stringProp>
                 <stringProp name="3569038">true</stringProp>
               </collectionProp>
-              <collectionProp name="-1388287169">
+              <collectionProp name="-1197345759">
                 <stringProp name="-1999211571">OpenRandom</stringProp>
                 <stringProp name="1691">50</stringProp>
                 <stringProp name="3569038">true</stringProp>
@@ -888,6 +888,16 @@ vars.put(&quot;post_id&quot;, firstpostId);</stringProp>
               </collectionProp>
             </HeaderManager>
             <hashTree/>
+            <BoundaryExtractor guiclass="BoundaryExtractorGui" testclass="BoundaryExtractor" testname="maxpageNumber" enabled="false">
+              <stringProp name="BoundaryExtractor.useHeaders">false</stringProp>
+              <stringProp name="BoundaryExtractor.refname">maxpageNumber</stringProp>
+              <stringProp name="BoundaryExtractor.lboundary">defaul?page=</stringProp>
+              <stringProp name="BoundaryExtractor.rboundary">&apos;&gt;</stringProp>
+              <stringProp name="BoundaryExtractor.default">1</stringProp>
+              <boolProp name="BoundaryExtractor.default_empty_value">false</boolProp>
+              <stringProp name="BoundaryExtractor.match_number">0</stringProp>
+            </BoundaryExtractor>
+            <hashTree/>
           </hashTree>
         </hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="OpenPredefinedDate" enabled="true">
@@ -1119,12 +1129,12 @@ vars.put(&quot;post_id&quot;, firstpostId);</stringProp>
           <com.blazemeter.jmeter.control.WeightedSwitchController guiclass="com.blazemeter.jmeter.control.WeightedSwitchControllerGui" testclass="com.blazemeter.jmeter.control.WeightedSwitchController" testname="RandomAction_SaveComment" enabled="true">
             <boolProp name="IsRandomChoice">false</boolProp>
             <collectionProp name="Weights">
-              <collectionProp name="-1464948272">
+              <collectionProp name="-834215393">
                 <stringProp name="557130398">AddComment</stringProp>
                 <stringProp name="1691">50</stringProp>
                 <stringProp name="3569038">true</stringProp>
               </collectionProp>
-              <collectionProp name="1746152560">
+              <collectionProp name="1338160132">
                 <stringProp name="-749023938">NoComment</stringProp>
                 <stringProp name="1691">50</stringProp>
                 <stringProp name="3569038">true</stringProp>
@@ -1605,11 +1615,12 @@ vars.put(&quot;post_id&quot;, firstpostId);</stringProp>
           <intProp name="LoopController.loops">-1</intProp>
         </elementProp>
         <stringProp name="ThreadGroup.num_threads">50</stringProp>
-        <stringProp name="ThreadGroup.ramp_time">60</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">3000</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">3000</stringProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
-        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">false</boolProp>
+        <boolProp name="ThreadGroup.delayedStart">true</boolProp>
       </ThreadGroup>
       <hashTree>
         <TransactionController guiclass="TransactionControllerGui" testclass="TransactionController" testname="Open Home Page" enabled="true">
@@ -1670,32 +1681,32 @@ vars.put(&quot;post_id&quot;, firstpostId);</stringProp>
         <com.blazemeter.jmeter.control.WeightedSwitchController guiclass="com.blazemeter.jmeter.control.WeightedSwitchControllerGui" testclass="com.blazemeter.jmeter.control.WeightedSwitchController" testname="RandomAction_SwitchController" enabled="true">
           <boolProp name="IsRandomChoice">true</boolProp>
           <collectionProp name="Weights">
-            <collectionProp name="3647437">
+            <collectionProp name="1987198854">
               <stringProp name="49">1</stringProp>
               <stringProp name="49">1</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="3648398">
+            <collectionProp name="1987982069">
               <stringProp name="50">2</stringProp>
               <stringProp name="49">1</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="3649359">
+            <collectionProp name="1988018587">
               <stringProp name="51">3</stringProp>
               <stringProp name="49">1</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="3650320">
+            <collectionProp name="1988055105">
               <stringProp name="52">4</stringProp>
               <stringProp name="49">1</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="3651281">
+            <collectionProp name="1988091623">
               <stringProp name="53">5</stringProp>
               <stringProp name="49">1</stringProp>
               <stringProp name="3569038">true</stringProp>
             </collectionProp>
-            <collectionProp name="3652242">
+            <collectionProp name="1988128141">
               <stringProp name="54">6</stringProp>
               <stringProp name="49">1</stringProp>
               <stringProp name="3569038">true</stringProp>
